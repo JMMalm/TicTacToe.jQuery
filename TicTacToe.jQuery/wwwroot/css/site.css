@@ -1,0 +1,68 @@
+@media screen and (max-width: 767px) {
+}
+
+body {
+	background-color: #f2f2f2;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container {
+	width: 650px;
+}
+
+.navbar-inverse {
+	background-color: red;
+	border: none;
+}
+
+.navbar-inverse .navbar-brand {
+	color: white;
+}
+
+#gameInfo {
+	font-size: 24px;
+	height: 50px;
+	padding-top: 10px;
+	text-align: center;
+}
+
+#gameInfo span {
+	font-weight: bold;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.x {
+	/*background-color: #ffb3b3;*/
+	color: #cc0000;
+}
+
+.o {
+	/*background-color: #b3b3ff;*/
+	color: #0000cc;
+}
+
+.disabled {
+	cursor: not-allowed;
+}
+
+.piece {
+	font-size: 144px;
+	font-weight: bold;
+	height: auto;
+	max-height: 200px;
+	max-width: 200px;
+	padding-bottom: 25px;
+	text-align: center;
+	width: auto;
+}
+
+.piece:hover {
+	border: 5px solid gold;
+}

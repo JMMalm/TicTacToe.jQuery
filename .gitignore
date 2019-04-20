@@ -1,0 +1,9 @@
+#Ignore items added by Visual Studio:
+.vs
+bin/
+obj/
+*.bak
+*.cache
+*.suo
+*.user
+*.vspscc

@@ -25,6 +25,11 @@ body {
 	color: white;
 }
 
+.reset {
+	border: 1px solid #808080;
+	margin-left: 20px;
+}
+
 #gameInfo {
 	font-size: 24px;
 	height: 50px;

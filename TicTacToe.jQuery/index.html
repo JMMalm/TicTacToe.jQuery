@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>Tic Tac Toe jQuery</title>
+
+	<link rel="stylesheet" href="css/site.css">
+
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+	<script type="text/javascript" src="scripts/site.js"></script>
+</head>
+<body>
+<div>
+	<div class="row">
+		<div id="gameInfo" class="col-md-12 x">
+			<span>X's Turn!</span>
+			<input type="button" value="Reset" class="btn reset" onclick="resetBoard()">
+		</div>
+	</div>
+	<div class="row">
+		<div id="gameGrid" class="col-md-12" style="white-space: nowrap;">
+			<div>
+				<input class="piece" value="" readonly="readonly">
+				<input class="piece" value="" readonly="readonly">
+				<input class="piece" value="" readonly="readonly">
+			</div>
+			<div>
+				<input class="piece" value="" readonly="readonly">
+				<input class="piece" value="" readonly="readonly">
+				<input class="piece" value="" readonly="readonly">
+			</div>
+			<div>
+				<input class="piece" value="" readonly="readonly">
+				<input class="piece" value="" readonly="readonly">
+				<input class="piece" value="" readonly="readonly">
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

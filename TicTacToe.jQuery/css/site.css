@@ -1,4 +1,5 @@
-@media screen and (max-width: 767px) {
+* {
+	box-sizing: border-box;
 }
 
 body {
@@ -6,9 +7,21 @@ body {
     padding-bottom: 20px;
 }
 
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+#gameInfo {
+	font-size: 24px;
+	height: 50px;
+	padding-top: 10px;
+	text-align: center;
+}
+
+#gameInfo span {
+	font-weight: bold;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.disabled {
+	cursor: not-allowed;
 }
 
 .navbar {
@@ -31,19 +44,6 @@ body {
 	margin-left: 20px;
 }
 
-#gameInfo {
-	font-size: 24px;
-	height: 50px;
-	padding-top: 10px;
-	text-align: center;
-}
-
-#gameInfo span {
-	font-weight: bold;
-	margin-left: auto;
-	margin-right: auto;
-}
-
 .x {
 	/*background-color: #ffb3b3;*/
 	color: #cc0000;
@@ -54,17 +54,9 @@ body {
 	color: #0000cc;
 }
 
-.disabled {
-	cursor: not-allowed;
-}
-
 .piece {
 	font-size: 144px;
 	font-weight: bold;
-	height: auto;
-	max-height: 200px;
-	max-width: 200px;
-	padding-bottom: 25px;
 	text-align: center;
 	width: auto;
 }
@@ -73,52 +65,51 @@ body {
 	border: 5px solid gold;
 }
 
-/* Random experiments */
-.piece {
-	height: 33%;
-	position: relative;
-	width: 33%;
-}
-  
-.piece:after {
-	display: block;
-	padding-bottom: 100%;
-}
-
 /* Flex styling here. */
 .flex-grid {
 	display: flex;
-  }
-  .flex-grid .col {
+}
+.flex-grid .col {
 	flex: 1;
-  }
-  .flex-grid-thirds {
+}
+.flex-grid-thirds {
 	display: flex;
 	justify-content: space-between;
 	padding-top: 5px;
-  }
-  .flex-grid-thirds .col {
-	width: 32%;
-  }
-  
-  @media (max-width: 400px) {
+}
+.flex-grid-thirds .col {
+	width: 33%;
+}
+
+.flex-grid { 
+	margin: 0 0 20px 0;
+}
+.col {
+	background: salmon;
+}
+
+@media (max-width: 400px) {
 	.flex-grid,
 	.flex-grid-thirds {
-	  display: flex;
+		display: flex;
 	}
-	.col {
-	width: 100%;
-	}
-  }
-  
-  * {
-	box-sizing: border-box;
-  }
 
-  .flex-grid { 
-	margin: 0 0 20px 0;
-  }
-  .col {
-	background: salmon;
-	padding: 20px;
-  }
+	.col {
+		width: 100%;
+	}
+
+	.piece {
+		font-size: 72px;
+	}
+}
+
+@media (min-width: 768px) {
+	.col {
+		height: 200px;
+		width: 200px;
+	}
+
+	.container {
+		width: 750px;
+	}
+}

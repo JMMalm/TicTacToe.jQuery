@@ -35,8 +35,12 @@ body {
 	border-bottom: 1px solid white;
 }
 
-.navbar-custom {
-	color: white;
+.navbar-default .navbar-brand {
+	color: #f2f2f2;
+}
+
+.navbar-default .navbar-brand:hover {
+	color: gold;
 }
 
 .reset {

@@ -1,33 +1,10 @@
-@media screen and (max-width: 767px) {
+* {
+	box-sizing: border-box;
 }
 
 body {
 	background-color: #f2f2f2;
-    padding-top: 50px;
     padding-bottom: 20px;
-}
-
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.container {
-	width: 650px;
-}
-
-.navbar-inverse {
-	background-color: red;
-	border: none;
-}
-
-.navbar-inverse .navbar-brand {
-	color: white;
-}
-
-.reset {
-	border: 1px solid #808080;
-	margin-left: 20px;
 }
 
 #gameInfo {
@@ -43,6 +20,34 @@ body {
 	margin-right: auto;
 }
 
+.disabled {
+	cursor: not-allowed;
+}
+
+.navbar {
+	background-color: red;
+	border: none;
+	border-radius: 0px;
+	color: white;
+}
+
+.navbar-default {
+	border-bottom: 1px solid white;
+}
+
+.navbar-default .navbar-brand {
+	color: #f2f2f2;
+}
+
+.navbar-default .navbar-brand:hover {
+	color: gold;
+}
+
+.reset {
+	border: 1px solid #808080;
+	margin-left: 20px;
+}
+
 .x {
 	/*background-color: #ffb3b3;*/
 	color: #cc0000;
@@ -53,21 +58,62 @@ body {
 	color: #0000cc;
 }
 
-.disabled {
-	cursor: not-allowed;
-}
-
 .piece {
 	font-size: 144px;
 	font-weight: bold;
-	height: auto;
-	max-height: 200px;
-	max-width: 200px;
-	padding-bottom: 25px;
 	text-align: center;
 	width: auto;
 }
 
 .piece:hover {
 	border: 5px solid gold;
+}
+
+/* Flex styling here. */
+.flex-grid {
+	display: flex;
+}
+.flex-grid .col {
+	flex: 1;
+}
+.flex-grid-thirds {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 5px;
+}
+.flex-grid-thirds .col {
+	width: 33%;
+}
+
+.flex-grid { 
+	margin: 0 0 20px 0;
+}
+.col {
+	background: salmon;
+}
+
+@media (max-width: 400px) {
+	.flex-grid,
+	.flex-grid-thirds {
+		display: flex;
+	}
+
+	.col {
+		width: 100%;
+	}
+
+	.piece {
+		font-size: 72px;
+	}
+}
+
+@media (min-width: 768px) {
+	.col {
+		height: 200px;
+		width: 200px;
+	}
+
+	.container {
+		width: 750px;
+	}
 }

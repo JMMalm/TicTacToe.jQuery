@@ -9,8 +9,6 @@ body {
 
 #gameInfo {
 	font-size: 24px;
-	height: 50px;
-	padding-top: 10px;
 	text-align: center;
 }
 
@@ -45,7 +43,6 @@ body {
 
 .reset {
 	border: 1px solid #808080;
-	margin-left: 20px;
 }
 
 .x {
@@ -69,6 +66,10 @@ body {
 	border: 5px solid gold;
 }
 
+.piece.disabled:hover {
+	border: none;
+}
+
 /* Flex styling here. */
 .flex-grid {
 	display: flex;
@@ -89,7 +90,7 @@ body {
 	margin: 0 0 20px 0;
 }
 .col {
-	background: salmon;
+	background: white;
 }
 
 @media (max-width: 400px) {

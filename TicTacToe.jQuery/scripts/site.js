@@ -3,7 +3,7 @@
 $(document).ready(function () {
 	console.log('jQuery has loaded.');
 
-	$('input.piece').on('click', function () {
+	$('#gameGrid .piece').on('click', function () {
 		if ($(this).hasClass('disabled')) {
 			return;
 		}
@@ -16,8 +16,8 @@ $(document).ready(function () {
 });
 
 function resetBoard() {
-	$('#gameGrid input.piece').each(function() {
-		$(this).val('');
+	$('#gameGrid .piece').each(function() {
+		$(this).text('-');
 		$(this).removeClass('x o disabled');
 	});
 
@@ -28,12 +28,12 @@ function resetBoard() {
 
 function pieceSelected(boardPiece) {
 	if (xTurn) {
-		$(boardPiece).addClass('x').val('X');
+		$(boardPiece).addClass('x').text('X');
 		$('#gameInfo > span').text('O\'s Turn!');
 		$('#gameInfo').addClass('o');
 	}
 	else {
-		$(boardPiece).addClass('o').val('O');
+		$(boardPiece).addClass('o').text('O');
 		$('#gameInfo > span').text('X\'s Turn!');
 		$('#gameInfo').removeClass('o');
 	}

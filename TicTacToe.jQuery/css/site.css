@@ -69,6 +69,10 @@ body {
 	border: 5px solid gold;
 }
 
+.piece.disabled:hover {
+	border: none;
+}
+
 /* Flex styling here. */
 .flex-grid {
 	display: flex;
@@ -89,7 +93,7 @@ body {
 	margin: 0 0 20px 0;
 }
 .col {
-	background: salmon;
+	background: white;
 }
 
 @media (max-width: 400px) {
